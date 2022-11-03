@@ -148,6 +148,8 @@ public class Main {
       System.out.println("You should enter numbers!");
       return false;
     }
+    assert (iTurn < 3 && iTurn > 1): "Wrong i-coordinates";
+    assert (jTurn < 3 && jTurn > 1): "Wrong j-coordinates";
     if (iTurn > 3 || jTurn > 3 || iTurn < 1 || jTurn < 1) {
       System.out.println("Coordinates should be from 1 to 3!");
       return false;
